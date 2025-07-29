@@ -12,3 +12,7 @@ services:
     volumes:
       - ${APP_DATA_DIR}/data/config:/app/config
     restart: on-failure
+    
+  web:
+    ports:
+      - 5056:5056
